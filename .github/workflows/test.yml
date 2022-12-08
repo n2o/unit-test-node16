@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: 16
           cache: "yarn"
+      - name: Copy sample env
+        run: cp .env.example .env
       - name: Install dependencies
         run: yarn
       - name: Execute tests
@@ -25,6 +27,8 @@ jobs:
         with:
           node-version: 16
           cache: "yarn"
+      - name: Copy sample env
+        run: cp .env.example .env
       - name: Install dependencies
         run: yarn
       - name: Execute tests
@@ -38,6 +42,8 @@ jobs:
         with:
           node-version: 16
           cache: "yarn"
+      - name: Copy sample env
+        run: cp .env.example .env
       - name: Install dependencies
         run: yarn
       - name: Build project
